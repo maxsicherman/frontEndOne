@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-
-    <script defer src="./js/header.js"></script>
 </head>
 <body>
 
@@ -25,8 +23,12 @@
                     <li class="list-item">
                         <a href="html/reviewz.html" class="list-link">Reviewz</a>
                     </li>
-                    <li class="list-item">
-                        <a href="html/authorz.html" class="list-link">Authorz</a>
+                    <li class="list-item" id="dropdown">
+                        <a href="html/authorz.html" class="list-link" id="authorz-link">Authorz</a>
+                        <div class="authorz-dropdown">
+                            <a href="html/Anna.html">Anna</a>
+                            <a href="html/Max.html">Max</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -35,6 +37,10 @@
 
     <div>
         <p id="msg">Home Paragraph.</p>
+    </div>
+
+    <div class="authorz-container" id="authorz-container">
+
     </div>
 </body>
 </html>

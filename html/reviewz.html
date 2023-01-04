@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviewz</title>
     <link href="../main.css" rel="stylesheet" type="text/css">
-    <script defer src="../js/header.js"></script>
 </head>
 <body>
 
@@ -24,14 +23,29 @@
                     <li class="list-item">
                         <a href="./reviewz.html" class="list-link current">Reviewz</a>
                     </li>
-                    <li class="list-item">
-                        <a href="./authorz.html" class="list-link">Authorz</a>
+                    <li class="list-item" id="dropdown">
+                        <a href="./authorz.html" class="list-link" id="authorz-link">Authorz</a>
+                        <div class="authorz-dropdown">
+                            <a href="./Anna.html">Anna</a>
+                            <a href="./Max.html">Max</a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <p id="msg">This is the reviewz page.</p>
+    <!-- <img src="../images/NightMarket203.jpg" alt="deeznutz"> -->
+
+    <template>
+        <div class="post">
+            <time>Date</time>
+            <div class="images"></div>
+            <h3 class="postTitle">Title</h3>
+            <p class="postBody">Body</p>
+        </div>
+    </template>
+
+    <script src="../js/posts.js"></script>
 </body>
 </html>

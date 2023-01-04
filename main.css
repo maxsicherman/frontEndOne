@@ -58,12 +58,21 @@ ul{
     margin: 50px;
     position: relative;
     top: 75px;
-    padding-bottom: 2px;
-    border-bottom: 1px solid grey;
+    padding: 20px;
+    border: 1px solid grey;
+    max-width: 20cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images{
+    text-align: center;
 }
 
 img{
-    border: 1px solid black;
+    align-items: center;
+    max-width: 45%;
+    max-height: auto;
 }
 
 time{
@@ -82,7 +91,7 @@ time{
     color: black;
 }
 
-.postBody{
+.postBody, .rating{
     margin: 1;
     text-align: center;
     font-size: var(--font-size-sm);

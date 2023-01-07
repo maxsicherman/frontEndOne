@@ -3,24 +3,26 @@
     --light-color: #fff;
     --light-color-alt: #afb6cd;
     --body-background-color: #ffffff;
-    --header-background-color: #e1e2d9;
+    --header-background-color: #2269f9;
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
-    --gradient-color: linear-gradient(
-        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
-    --transparent-light-color: rgba(255,255,255,.05);
-    --transparent-dark-color: rgba(0,0,0,.75);
-    --font-family: 'Poppins', sans-serif;
+    --font-family: Decalotype-Bold, sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
     --font-size-md: 2.4rem;
     --font-size-lg: 3rem;
     --font-size-xl: 4rem;
     --gap: 2rem;
-    --margin-sm: 2rem;
-    --margin-md: 3rem;
-    --item-min-height-sm: 20rem;
-    --item-min-height-md: 30rem;
+}
+
+@font-face {
+    font-family: Decalotype-Bold;
+    src: url(./fonts/Decalotype-Bold.ttf);
+}
+
+@font-face {
+    font-family: Decalotype-Light;
+    src: url(./fonts/Decalotype-light.ttf);
 }
 
 /* BASE */
@@ -37,7 +39,7 @@ html{
 body{
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
-    color: var(--light-color-alt);
+    color: black;
     background-color: var(--body-background-color);
     letter-spacing: 1px;
     transition: background-color .25s,color .25s;
@@ -45,7 +47,7 @@ body{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: var(--light-color);
 }
 
 ul{
@@ -59,7 +61,7 @@ ul{
     position: relative;
     top: 75px;
     padding: 20px;
-    border: 1px solid grey;
+    border: .5px solid grey;
     max-width: 20cm;
     margin-left: auto;
     margin-right: auto;
@@ -80,24 +82,57 @@ time{
     font-weight: 400;
     font-family: var(--font-family);
     color: black;
+    margin: 2mm;
+    font-family: Decalotype-Light;
 }
 
 .postTitle{
-    margin: 1;
-    text-align: center;
-    font-size: var(--font-size-md);
-    font-weight: 400;
-    font-family: var(--font-family);
+    margin: 2mm;
+    font-size: var(--font-size-xl);
+    font-weight: 1;
+    font-family: Decalotype-Regular;
     color: black;
 }
 
 .postBody, .rating{
-    margin: 1;
+    margin-left: 1cm;
+    margin-right: 1cm;
     text-align: center;
     font-size: var(--font-size-sm);
     font-weight: 400;
     font-family: var(--font-family);
     color: black;
+    font-family: Decalotype-Regular;
+}
+
+.postBody{
+    margin-top: 3mm;
+}
+
+/* Author Pages */
+
+.authorImage{
+    top: 15%;
+    width: 400px;
+    height: 400px;
+    margin: 3cm;
+    object-fit: cover;
+}
+
+.authorBio{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    right: 0;
+    width: 500px;
+    height: 100px;
+}
+
+#authorLine{
+    height: 2px;
+    background-color: black;
+    width: 1cm;
+    margin: 6px;
 }
 
 /* HEADER */
@@ -109,26 +144,29 @@ time{
     width: 100%;
     z-index: 999;
     padding: 2rem;
+    font-size: large;
+    height: 2cm;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 1.5rem;
+    padding-block: 1rem;
 }
 
 .logo{
     font-size: var(--font-size-md);
     color: white;
+    font-family: Decalotype-Bold;
 }
 
 .list-link.current{
-    color: white;
+    color: rgb(255, 236, 131);
 }
 
 .list-link:hover{
-    color: white;
+    color: rgb(255, 236, 131);
 }
 
 #dropdown {
@@ -139,22 +177,28 @@ time{
 .authorz-dropdown {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--header-background-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .authorz-dropdown a{
-    color: black;
+    color: var(--light-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-#dropdown a:hover {background-color: #ddd;}
+#dropdown a:hover {
+    color: rgb(255, 236, 131);
+}
 
 #dropdown:hover .authorz-dropdown {display: block;}
+
+#authorz-current{
+    color: rgb(255, 236, 131);
+}
 
 .list{
     display: flex;

@@ -124,7 +124,8 @@ for (i=0; i< Reviews.length; i++) {
 
     const image = document.createElement("img");
     image.src=Reviews[i].photos;
-    image.alt="Image didn't load."
+    image.alt="Image didn't load.";
+    image.id="post-image";
     images.appendChild(image);
 
     title.textContent = Reviews[i].title;

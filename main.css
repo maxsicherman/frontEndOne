@@ -73,6 +73,9 @@ ul{
 
 img{
     align-items: center;
+}
+
+#post-image{
     max-width: 45%;
     max-height: auto;
 }
@@ -112,23 +115,25 @@ time{
 /* Author Pages */
 
 .authorImage{
-    top: 15%;
+    top: 1cm;
+    left: 2.5cm;
     width: 400px;
     height: 400px;
-    margin: 3cm;
+    margin-top: 3cm;
     object-fit: cover;
+    position: fixed;
 }
 
 .authorBio{
-    position: absolute;
-    top: 25%;
-    left: 50%;
+    position: fixed;
+    top: 5cm;
+    left: 15cm;
     right: 0;
-    width: 500px;
+    width: 400px;
     height: 100px;
 }
 
-#authorLine{
+.h-line{
     height: 2px;
     background-color: black;
     width: 1cm;
@@ -214,7 +219,37 @@ time{
     color: var(--light-color)
 }
 
-#msg{
+/* Home */
+
+
+#home-image{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    top: 5cm;
+    left: 13cm;
+    position: fixed;
+}
+
+#home-container{
+    top: 6cm;
+    left: 2cm;
+    position: fixed;
+    width: 300px;
+}
+
+#home-header{
+    font-family: Decalotype-Regular;
+    font-size: large;
+    color: black;
+}
+
+#home-body{
+    font-family: Decalotype-Light;
+    font-size: large;
+    color: black;
+}
+/* #msg{
     margin: auto;
     line-height: 250mm;
     height: 250mm;
@@ -224,4 +259,4 @@ time{
     font-weight: 400;
     font-family: var(--font-family);
     color: var(--light-color-alt);
-}
+} */

@@ -94,7 +94,96 @@ const ThaiFreshBody = `Thai Fresh's cute decor in a tiny space helps to create t
 
 const ThaiFresh = new Review("Thai Fresh", "November 5, 2021", ThaiFreshBody, "../images/wCovidThaiFresh.jpg" , "Anna: 8.3 Max: 8.1");
 
-var Reviews = [Otus, NightMarket, Oui, Mizlala, Bacari, PastaSisters, Cofax, Yuko, ThaiFresh];
+const NongLaBody = `Nong La adds to the rich food culture of Sawtelle. Solid pho in a chic setting. \
+                    The waiter was very friendly, but was listening to music through a single wired \
+                    headphone. The soup got us feelin a little bloated, so if you're trying to get \
+                    SOMISOMI after, beware.`;
+
+const NongLa = new Review("Nong La", "December 3, 2021", NongLaBody, "../images/NongLa.jpg", "Anna: 8.0 Max: 7.6");
+
+const GoodStuffBody = `Though a bit of a mob, Good Stuff does in fact serve the goods. Anna almost \
+                       made us leave at first because the food didn't seem expensive enough. But the \
+                       burgers were incredibly tasty and filling. The basket of fries also were perfectly \
+                       crisp and salty. Forgot to take a picture here too so enjoy Anna by the ocean!`;
+
+const GoodStuff = new Review("Good Stuff Burgers", "December 5, 2021", GoodStuffBody, "../images/GoodStuffRandom.jpg", "Anna: 8.1 Max: 8.1");
+
+const MazalBody = `The best restaurant in all of Los Angeles. Max was a little sus at first when Anna wanted \
+                   to drive an hour to a vegetarian Israeli spot, but the food and ambience are well worth it. \
+                   The bourekas are sooooooo good and the flatbread is possibly the tastiest thing on the \
+                   planet, the perfect balance of sweet and savory. The pita feels like you're eating a cloud \
+                   of gluten. The restaurant itself also is very nicely decorated and has a cute patio. This \
+                   has become our spot and is always worth the schlep.`;
+                
+const Mazal = new Review("Mazal", "December 9, 2021", MazalBody, "../images/Mazal1.jpg", "Anna: 10 Max: 10");
+
+const CourageBody = `Quite possibly the most questionable decision either of us have ever made. It truly does \
+                     take courage to wait in line for 90 minutes in the rain to buy 2 bagels for $40 dollars. \
+                     Yes... $40. The bagel even tasted pretentious, but was still pretty tasty. The overall \
+                     experience was still XLent, as time spent together is unbeatable (especially in the Stu \
+                     City Philz).`;
+
+const Courage = new Review("Courage Bagels", "December 30, 2021", CourageBody, "../images/Courage.jpg", "Anna: 7.5 Max: 6.3");
+
+const FlakeBody = `A nice little breakfast burrito stand in the not gross part of Venice. Very tasty salsa but \
+                   they kind of skimp on the protein. The burrito was also super cheesy. Outdoor seating on Rose \
+                   Ave is a great place to enjoy a tame Saturday morning.`;
+
+const Flake = new Review("Flake", "January 15, 2022", FlakeBody, "../images/Flake.jpg", "Anna: 7.5 Max: Cofax - .5");                  
+
+const RonanBody = `If you're really in the mood for some normal, tasty pizza, Ronan is not the place for you. The \
+                   burrata is really good topped with pine nuts and super dark green oil. The pizzas are not at all \
+                   straightforward, with lots of toppings that may or may not add to the tastiness of the 'za. Nice \
+                   setting though with an outdoor booth in perfect lighting. 2 pizzas and burrata had us close to Xploding.`;
+
+const Ronan = new Review("Ronan", "January 28, 2022", RonanBody, "../images/Ojai.jpg", "Anna: 7.6 Max: 7.1");
+
+const AllTimeBody =   `Loud ass music got me feeling dizzy... The place was dimly lit with earthy decor which paired \
+                       with the random loud music to create an LA-chic ambience. The food was tasty, especially the \
+                       Japanese sweet potatoes. This spot is very expensive, has no parking, and our waitress was mega \
+                       kookie. They also tried to finesse Anna into tipping 30% with toast... nice try All Time.`;
+
+const AllTime = new Review("All Time", "April 8, 2022", AllTimeBody, "../images/AllTime.jpg", "Anna: 7.7 Max: 7.3");
+
+const PomodoroBody = `Pomodoro is the Italian spot we needed. The perfect place to go post-Dayger (thanks for driving, \
+                      Anna). At Pomo, they are truly for the customer. Our mans was ready to refill every 5 minutes and \
+                      the owner even checked up on us. There are tons of people in a very small space, which somehow \
+                      makes the spot feel more comfortable. The pasta and pizza are delicious and well-priced too.`;
+
+const Pomodoro = new Review("Pomodoro", "April 29, 2022", PomodoroBody, "../images/Pomodoro.jpg", "Anna: 8.0 Max: 8.2");
+
+const AllTimeBrunchBody = `Normal music volume this time. Much cheaper than dinner and still very filling and tasty. \
+                           DON'T GET THE SALAD... it's just lettuce.`;
+
+const AllTimeBrunch = new Review("All Time (Brunch)", "May 12, 2022", AllTimeBrunchBody, "../images/AllTimeBrunch.jpg", "Anna: 7.8 Max: 7.1");
+
+const YsabelBody = `Happy anniversary! To any other couple having trouble deciding between having a fancy dinner or \
+                    going clubbing for your anniversary, Ysabel is the perfect place for you. The dim but tasteful \
+                    lighting paired with music you'd only hear in the clerb, curated and mixed live by a DJ, creates an \
+                    ambience that might be a little too L.A. The food and drinks are pretty tasty, but relatively small \
+                    portions for a lot of $$$. Server was a doucher but no worries, if you need a dome to help relax, \
+                    there are plenty of people in there late 20's-early 30's vaping at the dinner table to fiend from. \
+                    Though a silly place for a romantic dinner, food quality, price, and ambience mean very little compared \
+                    to the joy it brings us spending an evening together and experiencing new things.`;
+
+const Ysabel = new Review("Ysabel", "June 11, 2022", YsabelBody, "../images/Ysabel.jpg", "Anna: 6.5 Max: 6.3");
+
+const nycBody = `Back in action! We had to get acclimated to the New York food scene before giving fair reviews, so this post \
+                 will be more of an NYC food overview rather than a single restaurant review. We would like to thank our \
+                 sponsors, Watson and Jeff Bezos, for allowing us to PR on food expenses this summer! After 6 weeks of feasting \
+                 around Manhattan, we can confirm that the bagels here are better. Go to Absolute for the best bagel and Sable's \
+                 for the best fish in town. If you're feeling Thai near the UES, Thep is better than Up Thai, except for the fact \
+                 that they're always out of Chang beer. Both spots play loud house music so you can bop during your dinner instead \
+                 of talking. Vanessa's is the perfect, cheap goodbye meal for lovers and dumpling lovers. The winner of most \
+                 spammable spot on the Upper East Side (and maybe the whole world) goes to Sashimi Express!! Nothing beats going \
+                 #beasmod on 11 rolls with your boo for only $40. As 2 big fat fatties who can't go more than a day without cookies \
+                 or ice cream, Levain's is a must for a tasty dessert after a tough day of work. Unfortunately, the summers over and \
+                 our 2 Jew reviewers can't feast together regularly for a bit, but they'll be reunited on the East Coast at the end \
+                 of the Winter for more feasting and reviewing!`;
+
+const NYC = new Review("NYC", "September 12, 2022", nycBody, "../images/Met.jpg", "");
+
+var Reviews = [Otus, NightMarket, Oui, Mizlala, Bacari, PastaSisters, Cofax, Yuko, ThaiFresh, NongLa, GoodStuff, Mazal, Courage, Flake, Ronan, AllTime, Pomodoro, AllTimeBrunch, Ysabel, NYC];
 
 Reviews.sort((a, b) => {
     const aDate = a.date
